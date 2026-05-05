@@ -16,13 +16,13 @@ export default function TaskForm({addTask}:Props){
     }
 
 return(
-    <form onSubmit={handleSubmit}>
+    <form style={{marginBottom:'20px'}} onSubmit={handleSubmit}>
        <input
         value={text}
         onChange={(e) => setText(e.target.value)}
         placeholder="Enter task"
       />
-      <button type="submit">Add</button> 
+      <button style={{marginLeft:'10px',borderRadius:'5px'}} type="submit">Add</button> 
     </form>
 )
 }
