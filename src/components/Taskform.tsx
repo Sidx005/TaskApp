@@ -10,7 +10,7 @@ export default function TaskForm({addTask}:Props){
     const [text,setText]=useState<string>("")
     const handleSubmit=(e:React.FormEvent)=>{
         e.preventDefault()
-        if(!text.trim()) return
+        if(!text.trim()) {alert("Please enter a task"); return}
         addTask(text)
         setText("")
     }
