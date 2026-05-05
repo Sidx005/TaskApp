@@ -22,7 +22,7 @@ return(
         onChange={(e) => setText(e.target.value)}
         placeholder="Enter task"
       />
-      <button style={{marginLeft:'10px',borderRadius:'5px'}} type="submit">Add</button> 
+      <button style={{backgroundColor:'blue',marginLeft:'10px',borderRadius:'5px'}} type="submit">Add</button> 
     </form>
 )
 }
