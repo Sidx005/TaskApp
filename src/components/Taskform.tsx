@@ -10,7 +10,7 @@ export default function TaskForm({addTask}:Props){
     const [text,setText]=useState<string>("")
     const handleSubmit=(e:React.FormEvent)=>{
         e.preventDefault()
-        if(!text.trim()) return
+        if(!text.trim()) {alert("Please enter a task"); return}
         addTask(text)
         setText("")
     }
@@ -22,7 +22,7 @@ return(
         onChange={(e) => setText(e.target.value)}
         placeholder="Enter task"
       />
-      <button style={{marginLeft:'10px',borderRadius:'5px'}} type="submit">Add</button> 
+      <button style={{backgroundColor:'blue',marginLeft:'10px',borderRadius:'5px'}} type="submit">Add</button> 
     </form>
 )
 }
